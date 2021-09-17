@@ -8,7 +8,7 @@ selecteur (s) {
   
 body {
     color: black;
-    margin: 20px;
+    margin: 8px;
     padding: 40px;
     max-width: auto;
     display: block;
@@ -31,7 +31,8 @@ h5 {
 }
 
 img { max-width: 100%;
-    margin: 20px;;
+    margin: 10px;
+    display: grid;
     
 }
 
