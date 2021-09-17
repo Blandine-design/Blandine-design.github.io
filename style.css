@@ -1,0 +1,36 @@
+/* 
+selecteur (s) {
+    propriété : valeur; 
+    propriété : valeur; 
+    propriété : valeur; 
+}
+*/
+  
+body {
+    color: black;
+    margin: 20px;
+    padding: 40px;
+    max-width: auto;
+    display: block;
+    font-family: 'Mukta', sans-serif;
+ 
+}
+
+h1 {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+}
+h3 {
+    color: darkblue;
+}
+h5 {
+    color: darkblue;
+}
+
+img { max-width: 100%;
+    margin: 20px;;
+    
+}
+
