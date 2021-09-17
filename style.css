@@ -20,10 +20,11 @@ h1 {
     text-align: center;
     background-color: darkblue;
     color: white;
-    padding: 20px;
+    padding: 25px;
 }
 h3 {
     color: darkblue;
+    font-size: 22px;
 }
 h5 {
     color: darkblue;
