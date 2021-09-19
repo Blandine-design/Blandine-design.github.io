@@ -5,38 +5,62 @@ selecteur (s) {
     propriété : valeur; 
 }
 */
-  
+@font-face {
+    font-family: 'lack lineregular';
+    src: url('fonts/lack-line-regular-webfont.woff2') format('woff2'),
+        url('fonts/lack-line-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     color: black;
-    margin: 8px;
     padding: 40px;
     max-width: auto;
     display: block;
     font-family: 'Mukta', sans-serif;
- 
+    background-color: rgb(223, 236, 245);
+
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.rectangles {
+    grid-column: 1/3;
+}
+
+.rectangle-bis {
+    grid-column: 1/3;
 }
 
 h1 {
-    text-align: center;
-    background-color: darkblue;
-    color: white;
-    padding: 25px;
+    text-align: left;
+    color: darkblue;
+    font-family: lack lineregular;
 }
-h2 { color: darkblue;
-    
-    
+
+h2 {
+    color: darkblue;
+    text-align: left;
 }
+
 h3 {
     color: darkblue;
     font-size: 22px;
 }
+
 h5 {
     color: darkblue;
 }
 
-img { max-width: 100%;
+img {
+    max-width: 100%;
     margin: 10px;
     display: grid;
-    
-}
 
+}
