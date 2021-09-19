@@ -16,7 +16,6 @@ selecteur (s) {
 
 body {
     color: black;
-    padding: 40px;
     max-width: auto;
     display: block;
     font-family: 'Mukta', sans-serif;
@@ -24,11 +23,23 @@ body {
 
 }
 
-.images {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+@media (min-width:400px) {
+    .images {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 }
+
+@media (min-width:700px) {
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+
 
 .rectangles {
     grid-column: 1/3;
@@ -42,6 +53,7 @@ h1 {
     text-align: left;
     color: darkblue;
     font-family: lack lineregular;
+    font-size: clamp(18px, 4vw, 28px);
 }
 
 h2 {
