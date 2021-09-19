@@ -19,7 +19,7 @@ body {
     max-width: auto;
     display: block;
     font-family: 'Mukta', sans-serif;
-    background-color: rgb(223, 236, 245);
+    background-color: rgb(74, 128, 167);
 
 }
 
@@ -51,24 +51,17 @@ body {
 
 h1 {
     text-align: left;
-    color: darkblue;
+    color: rgb(255, 255, 255);
     font-family: lack lineregular;
     font-size: clamp(18px, 4vw, 28px);
 }
 
 h2 {
-    color: darkblue;
+    color: rgb(255, 255, 255);
     text-align: left;
 }
 
-h3 {
-    color: darkblue;
-    font-size: 22px;
-}
 
-h5 {
-    color: darkblue;
-}
 
 img {
     max-width: 100%;
