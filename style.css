@@ -29,7 +29,8 @@ body {
     .images {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
+        column-gap: 15px;
+        row-gap: 0px;
     }
 }
 
@@ -39,7 +40,6 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
 
 .rectangles {
     grid-column: 1/3;
@@ -54,8 +54,13 @@ h1 {
     text-align: left;
     color: rgb(255, 255, 255);
     font-family: lack lineregular;
-    font-size: clamp(18px, 4vw, 28px);
+    font-size: clamp(15px, 4vw, 40px);
+
+}
+
+h1 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 h2 {
