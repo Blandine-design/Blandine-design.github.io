@@ -53,13 +53,33 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media (min-width:600px) {
     .images-bis {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 15px;
         row-gap: 0px;
-    }   
+    }
+}
+
+.navigation {
+  display: grid;  
+  grid-template-columns:  1fr 1fr 7fr;
+ text-align: left;
+ padding-left:10px;
+}
+.portfolio {
+    text-align: left;
+}
+.a-propos {
+    text-align: left;
+}
+.contact {
+    text-align: left;
+}
+.contact-p {
+    padding-top: 20px;
 }
 
 .rectangles {
@@ -76,7 +96,6 @@ h1 {
     color: rgb(255, 255, 255);
     font-family: lack lineregular;
     font-size: clamp(20px, 4vw, 30px);
-
 }
 
 h1 a {
@@ -88,6 +107,10 @@ h2 {
     color: rgb(255, 255, 255);
     text-align: left;
     font-size: clamp(15px, 4vw, 25px);
+}
+h2 a {
+    text-decoration: none;
+    color: currentColor;
 }
 
 .titre-projet {
@@ -110,7 +133,6 @@ img {
     margin: 10px;
     display: grid;
     border-radius: 15px;
-
 }
 
 .paragraphe {
