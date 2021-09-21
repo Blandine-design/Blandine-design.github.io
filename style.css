@@ -26,15 +26,18 @@ body {
     display: block;
     height: auto;
     font-family: 'Mukta', sans-serif;
-    background-color: rgb(74, 128, 167);
+    background-color: rgba(74, 128, 167);
     margin-right: 25px;
-
+}
+.background {
+    background-image: url(images/plan-de-travail-2.png);
 }
 
-@media (min-width:550px) {
+
+@media (min-width:450px) {
     .images {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         column-gap: 15px;
         row-gap: 0px;
     }
@@ -44,57 +47,87 @@ body {
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
     }
 }
 
 @media (min-width:450px) {
-    .images-bis {
+    .images-hokusai {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
 @media (min-width:600px) {
-    .images-bis {
+    .images-hokusai {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 0px;
+    }
+}
+
+@media (min-width:450px) {
+    .images-specimen {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:700px) {
+    .images-specimen {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 15px;
         row-gap: 0px;
     }
 }
 
 .navigation {
-  display: grid;  
-  grid-template-columns:  1fr 1fr 7fr;
- text-align: left;
- padding-left:10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    text-align: center;
+    justify-content: center;
+    padding-left: 10px;
 }
-.portfolio {
-    text-align: left;
-}
-.a-propos {
-    text-align: left;
-}
-.contact {
-    text-align: left;
-}
+
 .contact-p {
     padding-top: 20px;
+    text-decoration: none;
 }
 
 .rectangles {
     grid-column: 1/3;
 }
 
-.rectangle-bis {
-    grid-column-start: 2;
-    grid-column-end: span 2;
+a {
+    transition: 0.5s;
+    filter: grayscale(1)
+}
+
+a:hover {
+    opacity: 2;
+    filter: none
+}
+
+@media (min-width:450px) {
+    .rectangle-bis {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+    }
+}
+
+@media (min-width:700px) {
+    .rectangle-bis {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
 }
 
 h1 {
     text-align: left;
     color: rgb(255, 255, 255);
-    font-family: lack lineregular;
+    font-family: "lack lineregular", sans-serif;
     font-size: clamp(20px, 4vw, 30px);
 }
 
@@ -108,7 +141,13 @@ h2 {
     text-align: left;
     font-size: clamp(15px, 4vw, 25px);
 }
+
 h2 a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.instagram a {
     text-decoration: none;
     color: currentColor;
 }
@@ -138,4 +177,10 @@ img {
 .paragraphe {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.videos {
+    display:grid;
+    height: auto;
+    justify-content: center;
 }
