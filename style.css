@@ -200,6 +200,7 @@ h2 {
     color: rgb(255, 255, 255);
     text-align: left;
     font-size: clamp(15px, 4vw, 25px);
+    font-family: 'Mukta', sans-serif;
 }
 
 h2 a {
