@@ -262,4 +262,6 @@ img {
     display: grid;
     height: auto;
     justify-content: center;
+    row-gap: 15px;
+    max-width: 100%;
 }
