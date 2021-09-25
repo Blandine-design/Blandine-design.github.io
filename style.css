@@ -236,12 +236,12 @@ h2 a {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: clamp(20px, 4vw, 30px);
-    font-family: lack regular;
+    font-family: "lack regular", sans-serif;
 }
 
 .sous-titre {
     text-align: left;
-    font-family: lack regular;
+    font-family: "lack regular", sans-serif;
     color: rgb(255, 255, 255);
     font-size: clamp(16px, 4vw, 25px);
     margin-left: 20px;
