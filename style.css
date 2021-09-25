@@ -28,17 +28,18 @@ body {
     font-family: 'Mukta', sans-serif;
     background-color: rgba(74, 128, 167);
     margin: 15px;
-    
+
 }
+
 .background {
     background-image: url(images/plan-de-travail-2.png);
 }
 
-.images{
+.images {
     display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 15px;
-    row-gap: 15px; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
 }
 
 @media (min-width:450px) {
@@ -58,11 +59,13 @@ body {
         row-gap: 15px;
     }
 }
+
 .images-hokusai {
     display: grid;
-        grid-template-columns: 1fr;
-    row-gap: 15px; 
+    grid-template-columns: 1fr;
+    row-gap: 15px;
 }
+
 @media (min-width:450px) {
     .images-hokusai {
         display: grid;
@@ -79,11 +82,13 @@ body {
         row-gap: 15px;
     }
 }
+
 .images-esad {
     display: grid;
-        grid-template-columns: 1fr;
-    row-gap: 15px; 
+    grid-template-columns: 1fr;
+    row-gap: 15px;
 }
+
 @media (min-width:450px) {
     .images-esad {
         display: grid;
@@ -99,15 +104,17 @@ body {
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         column-gap: 15px;
-        row-gap: 15px;   
+        row-gap: 15px;
     }
 }
+
 .images-specimen {
     display: grid;
-        grid-template-columns: 1fr;
-        column-gap: 15px;
-    row-gap: 15px; 
+    grid-template-columns: 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
 }
+
 @media (min-width:450px) {
     .images-specimen {
         display: grid;
@@ -125,10 +132,19 @@ body {
 
 .navigation {
     display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-columns: 1fr 1fr 2fr;
     text-align: center;
     justify-content: center;
     padding-left: 10px;
+}
+@media (min-width:700px) {
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 4fr;
+        text-align: center;
+        justify-content: center;
+        padding-left: 10px;
+    }
 }
 
 .contact-p {
@@ -141,19 +157,22 @@ body {
     transition: 0.5s;
     filter: grayscale(1)
 }
-.rectangles:hover{
+
+.rectangles:hover {
     opacity: 2;
     filter: none
 }
+
 .rectangle-bis {
     transition: 0.5s;
     filter: grayscale(1)
 }
 
-.rectangle-bis:hover{
+.rectangle-bis:hover {
     opacity: 2;
     filter: none
 }
+
 a {
     transition: 0.5s;
     filter: grayscale(1)
@@ -169,8 +188,8 @@ a:hover {
         grid-column-start: 1;
         grid-column-end: span 2;
 
-    transition: 0.5s;
-    filter: grayscale(1)
+        transition: 0.5s;
+        filter: grayscale(1)
     }
 }
 
@@ -179,8 +198,8 @@ a:hover {
         grid-column-start: 2;
         grid-column-end: span 2;
 
-    transition: 0.5s;
-    filter: grayscale(1)
+        transition: 0.5s;
+        filter: grayscale(1)
     }
 }
 
@@ -240,7 +259,7 @@ img {
 }
 
 .videos {
-    display:grid;
+    display: grid;
     height: auto;
     justify-content: center;
 }
