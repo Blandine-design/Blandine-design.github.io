@@ -183,7 +183,7 @@ a:hover {
     filter: none
 }
 
-@media (min-width:300px) {
+@media (min-width:250px) {
     .rectangle-bis {
         grid-column-start: 1;
         grid-column-end: span 2;
