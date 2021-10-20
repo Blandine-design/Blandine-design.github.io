@@ -203,11 +203,6 @@ a:hover {
         filter: grayscale(1)
     }
 }
-    .photo-cathedrale {
-        justify-content: center;
-        grid-auto-rows: auto;
-    }
-
 
 @media (min-width:700px) {
     .photo-cathedrale {
