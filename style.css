@@ -6,7 +6,7 @@ selecteur (s) {
 }
 */
 @font-face {
-    font-family: 'lack lineregular';
+    font-family: "lack lineregular";
     src: url('fonts/lack-line-regular-webfont.woff2') format('woff2'),
         url('fonts/lack-line-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -21,20 +21,15 @@ selecteur (s) {
 }
 
 body {
-    color: rgb(255, 255, 255);
-    max-width: auto;
+    color: rgb(0, 0, 0);
     display: block;
     height: auto;
     font-family: 'Mukta', sans-serif;
-    background-color: rgba(74, 128, 167);
     margin: 15px;
 
 }
 
-.background {
-    background-image: url(images/plan-de-travail-2.png);
-    background-size: cover;
-}
+
 
 .images {
     display: grid;
@@ -164,57 +159,40 @@ body {
     text-decoration: none;
 }
 
-.rectangles {
+
+  .rectangles {
     grid-column: 1/3;
-    transition: 0.5s;
-    filter: grayscale(1)
-}
-
-.rectangles:hover {
-    opacity: 2;
-    filter: none
-}
-
-.rectangle-bis {
-    transition: 0.5s;
-    filter: grayscale(1)
-}
-
-.rectangle-bis:hover {
-    opacity: 2;
-    filter: none
-}
-
-a {
-    transition: 0.5s;
-    filter: grayscale(1)
-}
-
-a:hover {
-    opacity: 2;
-    filter: none
-}
-
-@media (min-width:250px) {
+  }
+  
+  .rectangles:hover {
+    opacity: 1;
+    filter: none;
+  }
+  
+  
+  .rectangle-bis:hover {
+    opacity: 1;
+  }
+  
+  
+  img:hover {
+    opacity: 1;
+    filter: none;
+  }
+  
+  @media (min-width: 250px) {
     .rectangle-bis {
-        grid-column-start: 1;
-        grid-column-end: span 2;
-
-        transition: 0.5s;
-        filter: grayscale(1)
+      grid-column-start: 1;
+      grid-column-end: span 2;
     }
-}
-
-@media (min-width:700px) {
+  }
+  
+  @media (min-width: 700px) {
     .rectangle-bis {
-        grid-column-start: 2;
-        grid-column-end: span 2;
-
-        transition: 0.5s;
-        filter: grayscale(1)
+      grid-column-start: 2;
+      grid-column-end: span 2;
     }
-}
-
+  }
 @media (min-width:700px) {
     .photo-cathedrale {
         grid-column-start: 2;
@@ -224,7 +202,7 @@ a:hover {
 
 h1 {
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: rgb(210, 11, 94);
     font-family: "lack lineregular", sans-serif;
     font-size: clamp(20px, 4vw, 30px);
 }
@@ -235,7 +213,7 @@ h1 a {
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(210, 11, 94);
     text-align: left;
     font-size: clamp(15px, 4vw, 25px);
     font-family: 'Mukta', sans-serif;
@@ -256,7 +234,7 @@ max-width: 33em;
 }
 
 .titre-projet {
-    color: rgb(255, 255, 255);
+    color: rgb(210, 11, 94);
     text-align: center;
     font-size: clamp(20px, 4vw, 30px);
     font-family: "lack regular", sans-serif;
@@ -265,22 +243,22 @@ max-width: 33em;
 .sous-titre {
     text-align: left;
     font-family: "lack regular", sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: clamp(16px, 4vw, 25px);
     margin-left: 20px;
 }
 .retour {
     text-align: center;
-    font-family: "lack regular", sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: clamp(13px, 4vw, 18px);
+    font-family: 'Mukta', sans-serif;
+    color: rgb(210, 11, 94);
+    font-size: clamp(10px, 2vw, 14px);
     margin-left: 20px;
 }
 
 img {
     max-width: 100%;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 5px; 
 }
 
 .paragraphe {
