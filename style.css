@@ -19,8 +19,8 @@ body {
 
 .images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    grid-template-columns: 1fr ;
+    column-gap: 20px;
     row-gap: 30px;
 }
 
@@ -28,8 +28,8 @@ body {
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 15px;
+       /* column-gap: 20px;
+        row-gap: 15px; */
     }
 }
 
@@ -38,8 +38,8 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        row-gap: 20px;
-        column-gap: 30px;
+        /*row-gap: 20px;
+        column-gap: 30px; */
     }
 }
 
@@ -56,7 +56,7 @@ body {
 .images-hokusai {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 30px;
+    column-gap: 20px;
     row-gap: 30px;
 }
 
@@ -64,8 +64,8 @@ body {
     .images-hokusai {
         display: grid;
         grid-template-columns: 1fr;
-        column-gap: 30px;
-    row-gap: 30px;
+        /*column-gap: 20px;
+    row-gap: 30px;*/
     }
 }
 
@@ -73,14 +73,15 @@ body {
     .images-hokusai {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 30px;
-    row-gap: 30px;
+       /* column-gap: 20px;
+    row-gap: 30px;*/
+}
 }
 
 .images-esad {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 30px;
+    column-gap: 20px;
     row-gap: 30px;
 }
 
@@ -89,8 +90,6 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
-        column-gap: 30px;
-        row-gap: 30px;
     }
 }
 
@@ -99,8 +98,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
-        column-gap: 30px;
-        row-gap: 30px;
+    
     }
 }
 
@@ -123,7 +121,6 @@ body {
     .images-specimen {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 30px;
     }
 }
 
@@ -138,9 +135,7 @@ body {
     .navigation {
         display: grid;
         grid-template-columns: 1fr 1fr 4fr;
-        text-align: center;
-        justify-content: center;
-        padding-left: 10px;
+
     }
 }
 
@@ -194,13 +189,13 @@ h1.centered-title {
     text-align: center;
     color: rgb(210, 11, 94);
     font-family: 'Cinzel Decorative', cursive;
-    font-size: clamp(20px, 4vw, 50px);
+    font-size: clamp(30px, 4vw, 50px);
 }
 h1.lefted-title {
     text-align: left;
     color: rgb(0, 0, 0);
     font-family: 'Cinzel Decorative', cursive;
-    font-size: clamp(15px, 4vw, 30px);
+    font-size: clamp(15px, 4vw, 25px);
 }
 
 h1 a {
@@ -238,8 +233,8 @@ max-width: 33em;
 .titre-projet {
     color: rgb(210, 11, 94);
     text-align: center;
-    font-size: clamp(20px, 4vw, 30px);
-    font-family: 'Mukta', sans-serif;
+    font-size: clamp(20px, 4vw, 40px);
+    font-family: 'Cinzel Decorative', serif;
 }
 
 .sous-titre {
