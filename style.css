@@ -5,27 +5,13 @@ selecteur (s) {
     propriété : valeur; 
 }
 */
-@font-face {
-    font-family: "lack lineregular";
-    src: url('fonts/lack-line-regular-webfont.woff2') format('woff2'),
-        url('fonts/lack-line-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: "lack regular";
-    src: url("fonts/Lack-Regular.woff2") format("woff2"),
-        url("fonts/Lack-Regular.woff") format("woff");
-}
 
 body {
     color: rgb(0, 0, 0);
     display: block;
     height: auto;
     font-family: 'Mukta', sans-serif;
-    margin: 15px;
+    margin: 50px;
 
 }
 
@@ -34,15 +20,15 @@ body {
 .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
-    row-gap: 15px;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 @media (min-width:450px) {
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 15px;
+        column-gap: 20px;
         row-gap: 15px;
     }
 }
@@ -52,7 +38,8 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        row-gap: 15px;
+        row-gap: 20px;
+        column-gap: 30px;
     }
 }
 
@@ -69,14 +56,16 @@ body {
 .images-hokusai {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 15px;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 @media (min-width:450px) {
     .images-hokusai {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 15px;
+        column-gap: 30px;
+    row-gap: 30px;
     }
 }
 
@@ -84,15 +73,15 @@ body {
     .images-hokusai {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 15px;
-        row-gap: 15px;
-    }
+        column-gap: 30px;
+    row-gap: 30px;
 }
 
 .images-esad {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 15px;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 @media (min-width:450px) {
@@ -100,7 +89,8 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
-        row-gap: 15px;
+        column-gap: 30px;
+        row-gap: 30px;
     }
 }
 
@@ -109,8 +99,8 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
-        column-gap: 15px;
-        row-gap: 15px;
+        column-gap: 30px;
+        row-gap: 30px;
     }
 }
 
@@ -118,8 +108,8 @@ body {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
-    column-gap: 15px;
-    row-gap: 15px;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 @media (min-width:450px) {
@@ -133,7 +123,7 @@ body {
     .images-specimen {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 15px;
+        column-gap: 30px;
     }
 }
 
@@ -200,28 +190,40 @@ body {
     }
 }
 
-h1 {
-    text-align: left;
+h1.centered-title {
+    text-align: center;
     color: rgb(210, 11, 94);
-    font-family: "lack lineregular", sans-serif;
-    font-size: clamp(20px, 4vw, 30px);
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(20px, 4vw, 50px);
+}
+h1.lefted-title {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: clamp(15px, 4vw, 30px);
 }
 
 h1 a {
+    
     text-decoration: none;
     color: currentColor;
 }
 
 h2 {
-    color: rgb(210, 11, 94);
+    color: rgb(0, 0, 0);
     text-align: left;
     font-size: clamp(15px, 4vw, 25px);
-    font-family: 'Mukta', sans-serif;
+    font-family:'Mukta', sans-serif;
 }
 
 h2 a {
     text-decoration: none;
     color: currentColor;
+}
+
+p a {
+    text-decoration: none;
+    color: currentColor;  
 }
 
 .instagram a {
@@ -237,12 +239,12 @@ max-width: 33em;
     color: rgb(210, 11, 94);
     text-align: center;
     font-size: clamp(20px, 4vw, 30px);
-    font-family: "lack regular", sans-serif;
+    font-family: 'Mukta', sans-serif;
 }
 
 .sous-titre {
     text-align: left;
-    font-family: "lack regular", sans-serif;
+    font-family: 'Mukta', sans-serif;
     color: rgb(0, 0, 0);
     font-size: clamp(16px, 4vw, 25px);
     margin-left: 20px;
