@@ -99,14 +99,6 @@ body {
     }
 }
 
-.images-specimen {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    column-gap: 30px;
-    row-gap: 30px;
-}
-
 .images-hezky {
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +112,17 @@ body {
 .video {
   flex: 1 0 300px; /* Each item takes an equal portion of the available space, with a minimum of 300px */
   max-width: 300px; /* Ensure images and video don't exceed 300px width */
-  margin: 15px; /* Optional, add spacing between items */
+  margin: 10px; /* Optional, add spacing between items */
+}
+
+
+
+.images-specimen {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
 @media (min-width:450px) {
@@ -129,8 +131,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-@media (min-width:700px) {
+@media (min-width:800px) {
     .images-specimen {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
