@@ -250,7 +250,7 @@ p a {
 }
 
 .instagram {
-max-width: 33em;
+max-width: 25em;
 }
 
 .titre-projet {
@@ -271,8 +271,11 @@ max-width: 33em;
     text-align: center;
     font-family: 'Mukta', sans-serif;
     color: rgb(210, 11, 94);
-    font-size: clamp(10px, 2vw, 14px);
+    font-size: clamp(15px, 3vw, 18px);
     margin-left: 20px;
+}
+.rose {
+    color: rgb(210, 11, 94); 
 }
 
 img {
@@ -282,9 +285,9 @@ img {
 }
 
 .paragraphe {
-    margin-left: 20px;
+    
     margin-right: 20px;
-    max-width: 45em;
+    max-width: 25em;
 }
 
 .videos {
