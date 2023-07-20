@@ -24,13 +24,6 @@ body {
     grid-gap: 20px;
 }
 
-/* Réglages spécifiques pour différentes tailles d'écran */
-
-@media (min-width: 450px) {
-    .images {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 @media (min-width: 700px) {
     .images {
@@ -39,12 +32,6 @@ body {
     }
 }
 
-/* Nouvelle règle pour les écrans de moins de 450px */
-@media (max-width: 449px) {
-    .images {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Cibler les balises <a> dans .images */
 .images a {
@@ -134,7 +121,7 @@ body {
     }
 }
 
-@media (min-width: 250px) {
+@media (min-width: 450px) {
     .rectangle-bis {
       grid-column-start: 1;
       grid-column-end: span 2;
