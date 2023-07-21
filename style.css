@@ -12,6 +12,7 @@ body {
     height: auto;
     font-family: 'Mukta', sans-serif;
     margin: 50px;
+    font-size: clamp(14px, 4vw, 18px);
 
 }
 
@@ -98,7 +99,26 @@ body {
         justify-content: center;
     }
 }
+.propos {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    
+}
 
+@media (min-width:450px) {
+    .propos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:700px) {
+    .propos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 .images-hezky {
     display: flex;
     flex-wrap: wrap;
@@ -250,7 +270,12 @@ p a {
 }
 
 .instagram {
-max-width: 25em;
+max-width: 40em;
+margin-top: 5%; 
+}
+
+.margin {
+  margin-top: 5%;  
 }
 
 .titre-projet {
@@ -271,11 +296,12 @@ max-width: 25em;
     text-align: center;
     font-family: 'Mukta', sans-serif;
     color: rgb(210, 11, 94);
-    font-size: clamp(15px, 3vw, 18px);
+    font-size: clamp(15px, 4vw, 18px);
     margin-left: 20px;
 }
 .rose {
     color: rgb(210, 11, 94); 
+    
 }
 
 img {
@@ -287,7 +313,7 @@ img {
 .paragraphe {
     
     margin-right: 20px;
-    max-width: 25em;
+    max-width: 40em;
 }
 
 .videos {
