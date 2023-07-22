@@ -31,17 +31,70 @@
     Affiches: 60 x 80 cm <br>
     Programmes: 10 x 18 cm 
 </p>
+<div class="images-specimen">
+<div class="image-item overlay-image">
+    <img src="images/mca/affiche-fiq.jpeg" alt="affiche-fiq" data-src="images/mca/affiche-fiq.jpeg">
+</div>
+<div class="image-item overlay-image">
+    <img src="images/mca/chantonssouslapluie.jpeg" alt="affiche 2" data-src="images/mca/chantonssouslapluie.jpeg">
+</div>
+<div class="image-item overlay-image">
+    <img src="images/mca/vadim-vernay.jpeg" alt="affiche-vadim" data-src="images/mca/vadim-vernay.jpeg">
+</div>
+<div class="image-item overlay-image">
+    <img src="images/mca/ensemble-programmes.jpg" alt="trois-programmes" data-src="images/mca/ensemble-programmes.jpg">
+</div>
+<div class="image-item overlay-image">
+    <img src="images/mca/programme-musique.jpg" alt="programme-musique" data-src="images/mca/programme-musique.jpg">
+</div>
+<div class="image-item overlay-image">
+    <img src="images/mca/programme-danse.jpg" alt="programme-danse" data-src="images/mca/programme-danse.jpg">
+</div>
+</div>
 
-    <div class="images-specimen">
-        <img src="images/mca/affiche-fiq.jpeg" alt="affiche-fiq"> 
-        <img src="images/mca/chantonssouslapluie.jpeg" alt="affiche 2">
-        <img src="images/mca/vadim-vernay.jpeg" alt="affiche-vadim">
-        <img src="images/mca/ensemble-programmes.jpg" alt="trois-programmes">
-        <img src="images/mca/programme-musique.jpg" alt="programme-musique">
-        <img src="images/mca/programme-danse.jpg" alt="programme-danse">
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Récupérer toutes les images de la classe "overlay-image"
+      var imageItems = document.querySelectorAll(".overlay-image");
+  
+      // Ajouter un gestionnaire d'événement clic à chaque image
+      imageItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+          // Récupérer l'URL de l'image agrandie à partir de l'attribut data-src
+          var imageURL = item.querySelector("img").getAttribute("data-src");
+  
+          // Afficher l'image en plein écran
+          showFullscreenImage(imageURL);
+        });
+      });
+  
+      // Fonction pour afficher l'image en plein écran
+      function showFullscreenImage(url) {
+        // Créer une div pour l'image en plein écran
+        var fullscreenImage = document.createElement("div");
+        fullscreenImage.classList.add("fullscreen-image");
+  
+        // Créer l'élément d'image
+        var imgElement = document.createElement("img");
+        imgElement.src = url;
+        imgElement.alt = "Image en plein écran";
+  
+        // Ajouter l'image à l'élément en plein écran
+        fullscreenImage.appendChild(imgElement);
+  
+        // Ajouter l'élément en plein écran au body de la page
+        document.body.appendChild(fullscreenImage);
+  
+        // Ajouter un gestionnaire d'événement clic pour fermer l'image en plein écran
+        fullscreenImage.addEventListener("click", function () {
+          document.body.removeChild(fullscreenImage);
+        });
+      }
+    });
 
-        
-    </div>
+</script>
+   
+
     <h2 class="retour"> <a href="index.html">Retour</a></h2>
 
 </body>

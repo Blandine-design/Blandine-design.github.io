@@ -21,12 +21,61 @@
         et couleurs variées, nous offre aussi une expérience sensorielle. </p>
 
 
-<div class="images-hokusai">
-    <img src="images/nuancier/vue-ensemble.jpg" alt="nuancier-ensemble">
-    <img src="images/nuancier/tranche-nuancier.jpg" alt="tranche-nuancier">
-    <img src="images/nuancier/gros-plan.jpg" alt="gros-plan">
-    <img src="images/nuancier/texte-nuancier.jpg" alt="texte-nuancier">
-</div>
+        <div class="images-hokusai">
+            <div class="image-item overlay-image">
+                <img src="images/nuancier/vue-ensemble.jpg" alt="nuancier-ensemble" data-src="images/nuancier/vue-ensemble.jpg">
+            </div>
+            <div class="image-item overlay-image">
+                <img src="images/nuancier/tranche-nuancier.jpg" alt="tranche-nuancier" data-src="images/nuancier/tranche-nuancier.jpg">
+            </div>
+            <div class="image-item overlay-image">
+                <img src="images/nuancier/gros-plan.jpg" alt="nuancier-gros-plan" data-src="images/nuancier/gros-plan.jpg">
+            </div>
+            <div class="image-item overlay-image">
+                <img src="images/nuancier/texte-nuancier.jpg" alt="texte-nuancier" data-src="images/nuancier/texte-nuancier.jpg">
+            </div>
+        </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Récupérer toutes les images du carrousel
+      var imageItems = document.querySelectorAll(".images-hokusai .image-item");
+  
+      // Ajouter un gestionnaire d'événement clic à chaque image
+      imageItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+          // Récupérer l'URL de l'image agrandie à partir de l'attribut data-src
+          var imageURL = item.querySelector("img").getAttribute("data-src");
+  
+          // Afficher l'image en plein écran
+          showFullscreenImage(imageURL);
+        });
+      });
+  
+      // Fonction pour afficher l'image en plein écran
+      function showFullscreenImage(url) {
+        // Créer une div pour l'image en plein écran
+        var fullscreenImage = document.createElement("div");
+        fullscreenImage.classList.add("fullscreen-image");
+  
+        // Créer l'élément d'image
+        var imgElement = document.createElement("img");
+        imgElement.src = url;
+        imgElement.alt = "Image en plein écran";
+  
+        // Ajouter l'image à l'élément en plein écran
+        fullscreenImage.appendChild(imgElement);
+  
+        // Ajouter l'élément en plein écran au body de la page
+        document.body.appendChild(fullscreenImage);
+  
+        // Ajouter un gestionnaire d'événement clic pour fermer l'image en plein écran
+        fullscreenImage.addEventListener("click", function () {
+          document.body.removeChild(fullscreenImage);
+        });
+      }
+    });
+  </script>
 
 <h2 class="retour"> <a href="index.html">Retour</a></h2>
     
