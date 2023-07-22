@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flickity.css" media="screen">
+
 </head>
 
 <body>
@@ -25,21 +27,75 @@
         cette série de photographies joue avec gros plans, couleurs et lumière afin de créer des univers singuliers. 
     </p>
 
-    <div class="images-specimen">
+<!-- Structure HTML pour le carrousel -->
+<div class="carousel" class="images-specimen">
+    <div class="carousel-cell">
         <img src="images/bourse/bourse.jpg" alt="photo 1">
-        <img src="images/bourse/bourse2.jpg" alt="photo2">
-        <img src="images/bourse/bourse3.jpg" alt="photo3">
-        <img src="images/bourse/bourse6.jpg" alt="photo6">
-        <img src="images/bourse/bourse4.jpg" alt="photo4">
-        <img src="images/bourse/bourse9.jpg" alt="photo9">
-        <img src="images/bourse/bourse5.jpg" alt="photo5">
-        <img src="images/bourse/bourse7.jpg" alt="photo7">
-        <img src="images/bourse/bourse8.jpg" alt="photo8">
-        
-        
-        
-        
     </div>
+    <div class="carousel-cell">
+        <img src="images/bourse/bourse2.jpg" alt="photo 2">
+    </div>
+    <!-- Ajouter le reste des images ici -->
+    <div class="carousel-cell">
+        <img src="images/bourse/bourse3.jpg" alt="photo 3">
+    </div>
+    <div class="carousel-cell">
+        <img src="images/bourse/bourse4.jpg" alt="photo 4">
+    </div>
+    <div class="carousel-cell">
+        <img src="images/bourse/bourse5.jpg" alt="photo 5">
+    </div>
+    <div class="carousel-cell">
+        <img src="images/bourse/bourse6.jpg" alt="photo 6">
+    </div>
+    <div class="carousel-cell">
+        <img src="images/bourse/bourse7.jpg" alt="photo 7">
+    </div>
+    <div class="carousel-cell">
+        <img src="images/bourse/bourse8.jpg" alt="photo 8">
+    </div>
+    <div class="carousel-cell">
+        <img src="images/bourse/bourse9.jpg" alt="photo 9">
+    </div>
+    
+</div>
+
+<style>
+    .carousel {
+    width: 100%;
+    height: 900px;
+    }
+    
+    .carousel-cell{
+        width: 100%;
+        height: 100%;
+        color: rgb(255, 240, 254);
+        display: grid;
+        place-items: center;
+    }
+    
+    
+    </style>
+<script src="flickity.pkgd.min.js"></script> 
+
+<script>
+    // Attendre que le DOM soit chargé avant d'exécuter le JavaScript
+    document.addEventListener("DOMContentLoaded", function () {
+        // Récupérer le conteneur du carrousel
+        var carousel = document.querySelector(".carousel");
+
+        // Initialiser Flickity avec des options
+        var flkty = new Flickity(carousel, {
+            cellAlign: "left", // Aligner les cellules à gauche pour les espacer
+            contain: true, // Contenir les images dans le carrousel
+            pageDots: false, // Désactiver les points de pagination
+            wrapAround: true, // Permet de faire une boucle infinie
+            prevNextButtons: true, // Afficher les boutons de navigation précédent/suivant
+            autoPlay: 5000 // Définir une durée pour changer automatiquement d'image (5000 ms = 5 secondes)
+        });
+    });
+</script>
+
     <h2 class="retour"> <a href="photo.html">Retour</a></h2>
 </body>
 
