@@ -151,7 +151,7 @@ body {
         grid-template-columns: 1fr;
     }
 }
-@media (min-width:800px) {
+@media (min-width:700px) {
     .images-specimen {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -328,7 +328,7 @@ img {
     max-height: 90%;
     object-fit: contain;
   }
-  
+
 .paragraphe {
     
     margin-right: 20px;
