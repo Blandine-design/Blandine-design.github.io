@@ -16,8 +16,6 @@ body {
 
 }
 
-
-
 /* Grille de base pour les images */
 .images {
     display: grid;
@@ -76,29 +74,6 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 }
-
-.images-esad {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 20px;
-    row-gap: 30px;
-}
-
-@media (min-width:450px) {
-    .images-esad {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-content: center;
-    }
-}
-
-@media (min-width:700px) {
-    .images-esad {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-    }
-}
 .propos {
     display: grid;
     grid-template-columns: 1fr;
@@ -134,8 +109,6 @@ body {
   max-width: 300px; /* Ensure images and video don't exceed 300px width */
   margin: 10px; /* Optional, add spacing between items */
 }
-
-
 
 .images-specimen {
     display: grid;
@@ -193,7 +166,7 @@ body {
 
 .navigation {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     justify-content: center;
     padding-left: 10px;
@@ -300,8 +273,7 @@ margin-top: 5%;
     margin-left: 20px;
 }
 .rose {
-    color: rgb(210, 11, 94); 
-    
+    color: rgb(210, 11, 94);  
 }
 
 img {
