@@ -276,6 +276,10 @@ margin-top: 5%;
     color: rgb(210, 11, 94);  
 }
 
+.mentions-legales {
+color: rgb(199, 199, 199);
+font-size: clamp(8px, 4vw, 12px);
+}
 img {
     max-width: 100%;
     margin: auto;
