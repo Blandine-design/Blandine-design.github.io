@@ -238,7 +238,7 @@ p a {
 }
 
 .instagram a {
-    text-decoration: none;
+    text-decoration: underline;
     color: currentColor;
 }
 
