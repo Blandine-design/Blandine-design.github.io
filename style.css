@@ -233,7 +233,7 @@ h2 a {
 }
 
 p a {
-    text-decoration: none;
+    text-decoration: underline;
     color: currentColor;  
 }
 
@@ -325,3 +325,20 @@ img {
     width: 100%; /* Make the video element fill its container (div.video) */
     height: auto; /* Maintain the video's aspect ratio */
   }
+
+  .video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; /* Pour éviter qu'elle dépasse */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
